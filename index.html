@@ -1,0 +1,63 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Position </title>
+</head>
+<body>
+    <!-- 
+        Default position is static, meaning it will be where you place it.
+        In order for us to make use of left, right, top, bottom, you need to set the element to relative, sticky, fixed, or absolute.
+     -->
+    <section class="container">
+        <h2>Relative position</h2>
+        <div id="box1">
+            this div element has position relative
+        </div>
+        <p>
+            An element with postion: relative; is postioned relative to its normal position.
+            Setting the top, right, bottom, and left properties of relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element. 
+
+        </p>
+    </section>
+    <section class="container">
+        <h2>Position sticky</h2>
+        <div id="box2">
+            this div element has position sticky
+        </div>
+        <p>
+            An element with position: sticky; is positioned based on the user's scroll position.
+
+            A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+        </p>
+    </section>
+    <section class="container">
+        <h2>Position absolute</h2>
+        <div id="box3">
+            this div element has position absolute
+        </div>
+        <p>
+            An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+        </p>
+    </section>
+    <div id="top">
+        Top
+    </div>
+    <section class="container" >
+        <h2>Position Fixed</h2>
+        <div id="box4">
+            this div element has position fixed.
+        </div>
+        <p>
+            An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+A fixed element does not leave a gap in the page where it would normally have been located.
+        </p>
+</body>
+</html>

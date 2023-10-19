@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    color: rgb(247, 245, 246);
+    font-size: 2em;
+}
+.container {
+    /* 
+    background's property:
+    background-color, background-image, 
+    background-position, background-size,
+    background-repeat
+    */
+    background: rgba(147, 61, 134, 0.9) url(https://i.postimg.cc/JzgDdGym/person.png) no-repeat center;
+    background-size: contain;
+    /* background-blend-mode: ; */
+    height: 100vh;
+}
+:is(h2, #box1) {
+    background-color: rgb(31, 31, 32, .8);
+    text-shadow: .2vw .4vw .1vw rgba(38, 99, 38, 0.7);
+}
+/* position relative: 
+When an element is positioned relatively, it is positioned relative to its normal flow in the document.*/
+#box1 {
+    position: relative;
+    top: 0;
+    padding: 5px;
+    border: 2px dotted greenyellow;
+    background-color: rgb(31, 31, 32, .8);
+}
+/* Position sticky: */
+#box2 {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    border: 2px  dotted greenyellow;
+    background-color: rgb(31, 31, 32, .8);
+}
+/* Position absolute */
+#box3 {
+    position: relative;
+    border: 2px dotted greenyellow;
+    background-color: rgb(31, 31, 32, .8);
+}
+#posAbsolute {
+    position: absolute;  
+    right: 1;
+    background-color: rgba(148, 226, 165, 0.8);
+    /* To place the box-shadow inside the box, use the 'inset' value. */
+    box-shadow: inset 1vw .3vw 1vw green;
+}
+/* Position fixed */
+#box4{
+    /* position: fixed; */
+    border: 3px dotted greenyellow;
+    width: 90vw;
+    bottom: 0;
+}
+#top {
+    background-image: linear-gradient(to right, green yellow );
+    width: 100px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
